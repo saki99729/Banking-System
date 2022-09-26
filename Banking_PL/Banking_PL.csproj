@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2130183C-9D1B-4AF1-8E0B-22E0929415E6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Banking_PL</RootNamespace>
+    <AssemblyName>Banking_PL</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.1.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.1.4\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountAdd.Designer.cs">
+      <DependentUpon>AccountAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountDelete.Designer.cs">
+      <DependentUpon>AccountDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accountsearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accountsearch.Designer.cs">
+      <DependentUpon>Accountsearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountUpdate.Designer.cs">
+      <DependentUpon>AccountUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountVeiw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountVeiw.Designer.cs">
+      <DependentUpon>AccountVeiw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addData.Designer.cs">
+      <DependentUpon>addData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cashier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cashier.Designer.cs">
+      <DependentUpon>cashier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="database.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>database.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="deleteData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteData.Designer.cs">
+      <DependentUpon>deleteData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="depositData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="depositData.Designer.cs">
+      <DependentUpon>depositData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="function.cs" />
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="searchData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchData.Designer.cs">
+      <DependentUpon>searchData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_AccountsMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_AccountsMenu.Designer.cs">
+      <DependentUpon>UI_AccountsMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="updateData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateData.Designer.cs">
+      <DependentUpon>updateData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="veiwData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="veiwData.Designer.cs">
+      <DependentUpon>veiwData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="withrawData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="withrawData.Designer.cs">
+      <DependentUpon>withrawData.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AccountAdd.resx">
+      <DependentUpon>AccountAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountDelete.resx">
+      <DependentUpon>AccountDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accountsearch.resx">
+      <DependentUpon>Accountsearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountUpdate.resx">
+      <DependentUpon>AccountUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountVeiw.resx">
+      <DependentUpon>AccountVeiw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addData.resx">
+      <DependentUpon>addData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cashier.resx">
+      <DependentUpon>cashier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteData.resx">
+      <DependentUpon>deleteData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="depositData.resx">
+      <DependentUpon>depositData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchData.resx">
+      <DependentUpon>searchData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_AccountsMenu.resx">
+      <DependentUpon>UI_AccountsMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="updateData.resx">
+      <DependentUpon>updateData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="veiwData.resx">
+      <DependentUpon>veiwData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="withrawData.resx">
+      <DependentUpon>withrawData.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="database.xsc">
+      <DependentUpon>database.xsd</DependentUpon>
+    </None>
+    <None Include="database.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>database.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="database.xss">
+      <DependentUpon>database.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bank_BL\Bank_BL.csproj">
+      <Project>{b431fea3-b105-478a-9e99-812b612c0d0d}</Project>
+      <Name>Bank_BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bank_DL\Bank_DL.csproj">
+      <Project>{407d7598-3e7f-4a64-b296-543f7d97b2d8}</Project>
+      <Name>Bank_DL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
